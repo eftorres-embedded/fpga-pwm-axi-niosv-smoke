@@ -1,0 +1,6 @@
+DATE = "10:15:51 March 24, 2026"
+QUARTUS_VERSION = "16.0.0"
+
+# Revisions
+
+PROJECT_REVISION = "fpga_pwm_axi_niosv_smoke_test1"

@@ -1,0 +1,50 @@
+# Quartus generated
+quartus/db/
+quartus/incremental_db/
+quartus/.qsys_edit/
+*.rpt
+*.summary
+*.smsg
+*.done
+*.sof
+*.pof
+*.jdi
+*.jditmp
+*.qws
+*.pin
+*.sld
+*_assignment_defaults.qdf
+
+# General Quartus temp/cache
+*.ddb
+*.hdb
+*.idb
+*.ldb
+*.kpt
+*.qmsg
+*.rdb
+*.tdf
+*.cmp
+*.ammdb
+*.logdb
+*.rcfdb
+
+# Software build outputs
+sw/app/build/
+sw/app/bsp/CMakeFiles/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+
+# ELF/objdump/hex outputs
+*.elf
+*.objdump
+*.hex
+*.map
+
+# Backup/editor files
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst system.niosv_m.timer_module -pg 1
+preplace inst system.niosv_m.dbg_mod -pg 1
+preplace inst system.niosv_m.hart -pg 1
+preplace inst system.niosv_m.clock_bridge -pg 1
+preplace inst system.niosv_m -pg 1 -lvl 2 -y 50
+preplace inst system.axi_lite_pwm -pg 1 -lvl 3 -y 290
+preplace inst system.jtag_uart -pg 1 -lvl 3 -y 50
+preplace inst system.niosv_m.reset_bridge -pg 1
+preplace inst system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst system.onchip_memory -pg 1 -lvl 3 -y 150
+preplace inst system.clk_0 -pg 1 -lvl 1 -y 70
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>system</net_container>(MASTER)niosv_m.platform_irq_rx,(SLAVE)jtag_uart.irq) 1 2 1 N
+preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)niosv_m.reset,(SLAVE)onchip_memory.reset1,(SLAVE)axi_lite_pwm.reset,(SLAVE)onchip_memory.reset2,(SLAVE)jtag_uart.reset,(MASTER)clk_0.clk_reset) 1 1 2 270 340 640
+preplace netloc FAN_OUT<net_container>system</net_container>(MASTER)clk_0.clk,(SLAVE)onchip_memory.clk2,(SLAVE)axi_lite_pwm.clock,(SLAVE)jtag_uart.clk,(SLAVE)onchip_memory.clk1,(SLAVE)niosv_m.clk) 1 1 2 290 170 660
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)system.reset) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>system</net_container>(SLAVE)onchip_memory.s2,(SLAVE)niosv_m.dm_agent,(SLAVE)onchip_memory.s1,(MASTER)niosv_m.instruction_manager,(SLAVE)niosv_m.timer_sw_agent,(SLAVE)jtag_uart.avalon_jtag_slave,(MASTER)niosv_m.data_manager,(SLAVE)axi_lite_pwm.s_axil) 1 1 2 310 360 620
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.pwm_out,(SLAVE)axi_lite_pwm.pwm) 1 0 3 NJ 320 NJ 320 NJ
+levelinfo -pg 1 0 60 850
+levelinfo -hier system 70 100 420 700 840
