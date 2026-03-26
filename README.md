@@ -19,6 +19,30 @@ This project serves as a foundation for integrating custom peripherals such as P
 - Clock and reset logic (Provided by Platform Designer)
 - PWM module (AXI4lite) (Provided by the user)
 
+```txt
+           +----------------------+
+           |   Nios V Processor   |
+           +----------+-----------+
+                      |
+                      |
+          +-----------v------------------+
+          |  AXI/Avalon Interconnect     |
+          +-----------+------------------+
+                      |
+     -----------------------------------------
+     |                |                      |
+     |                |                      |
++----v----+    +------v------+     +---------v----------+
+| On-Chip |    |  JTAG UART  |     | AXI-Lite Wrapper   |
+| Memory  |    +------+------+     +---------+----------+
++---------+           |                      |
+                      |                      |
+               +------v------+       +------v-------------+
+               | Host PC     |       | PWM Subsystem      |
+               | Terminal    |       | (MMIO)             |
+               +-------------+       +--------------------+
+```
+
 ## Project Structure
 
 rtl/       Hardware design (PWM, AXI interface, top-level)  

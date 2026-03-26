@@ -11,6 +11,6 @@
    <baseaddress preferredWidth="105" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
+ <library expandedCategories="Project,Library" />
  <window width="1187" height="983" x="-1481" y="0" />
 </preferences>
