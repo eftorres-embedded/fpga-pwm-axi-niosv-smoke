@@ -96,3 +96,8 @@ quartus/*.qws
 # Platform Designer
 pd/system/*.html
 pd/system/*.rpt
+
+# Quartus generatd files
+quartus/db/
+quartus/incremental_db/
+quartus/*.sld

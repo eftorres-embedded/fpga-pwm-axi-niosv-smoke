@@ -13,7 +13,7 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "5";
          type = "int";
       }
    }
@@ -37,7 +37,7 @@
    {
       datum _sortIndex
       {
-         value = "3";
+         value = "4";
          type = "int";
       }
    }
@@ -53,7 +53,7 @@
    {
       datum _sortIndex
       {
-         value = "1";
+         value = "2";
          type = "int";
       }
    }
@@ -77,7 +77,7 @@
    {
       datum _sortIndex
       {
-         value = "2";
+         value = "3";
          type = "int";
       }
    }
@@ -95,6 +95,14 @@
       {
          value = "0";
          type = "String";
+      }
+   }
+   element reset_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
       }
    }
    element system
@@ -216,6 +224,17 @@
   <parameter name="useShallowMemBlocks" value="false" />
   <parameter name="writable" value="true" />
  </module>
+ <module
+   name="reset_bridge_0"
+   kind="altera_reset_bridge"
+   version="25.1"
+   enabled="1">
+  <parameter name="ACTIVE_LOW_RESET" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="NUM_RESET_OUTPUTS" value="1" />
+  <parameter name="SYNCHRONOUS_EDGES" value="deassert" />
+  <parameter name="USE_RESET_REQUEST" value="0" />
+ </module>
  <connection
    kind="avalon"
    version="25.1"
@@ -285,6 +304,11 @@
    kind="clock"
    version="25.1"
    start="clk_0.clk"
+   end="reset_bridge_0.clk" />
+ <connection
+   kind="clock"
+   version="25.1"
+   start="clk_0.clk"
    end="onchip_memory.clk1" />
  <connection
    kind="clock"
@@ -307,26 +331,31 @@
    kind="reset"
    version="25.1"
    start="clk_0.clk_reset"
+   end="reset_bridge_0.in_reset" />
+ <connection
+   kind="reset"
+   version="25.1"
+   start="reset_bridge_0.out_reset"
    end="niosv_m.reset" />
  <connection
    kind="reset"
    version="25.1"
-   start="clk_0.clk_reset"
+   start="reset_bridge_0.out_reset"
    end="jtag_uart.reset" />
  <connection
    kind="reset"
    version="25.1"
-   start="clk_0.clk_reset"
+   start="reset_bridge_0.out_reset"
    end="axi_lite_pwm.reset" />
  <connection
    kind="reset"
    version="25.1"
-   start="clk_0.clk_reset"
+   start="reset_bridge_0.out_reset"
    end="onchip_memory.reset1" />
  <connection
    kind="reset"
    version="25.1"
-   start="clk_0.clk_reset"
+   start="reset_bridge_0.out_reset"
    end="onchip_memory.reset2" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
