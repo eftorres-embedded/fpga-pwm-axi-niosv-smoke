@@ -1,0 +1,21 @@
+
+State Machine - |fpga_pwm_axi_niosv_smoke_test1|system:u0|system_niosv_m:niosv_m|niosv_dm_top:dbg_mod|niosv_debug_module:dm_inst|dm_state
+Name dm_state.EXE_PNDG dm_state.RESUMING dm_state.CMD_EXE dm_state.HALTED dm_state.HALTREQ dm_state.IDLE 
+dm_state.IDLE 0 0 0 0 0 0 
+dm_state.HALTREQ 0 0 0 0 1 1 
+dm_state.HALTED 0 0 0 1 0 1 
+dm_state.CMD_EXE 0 0 1 0 0 1 
+dm_state.RESUMING 0 1 0 0 0 1 
+dm_state.EXE_PNDG 1 0 0 0 0 1 
+
+State Machine - |fpga_pwm_axi_niosv_smoke_test1|system:u0|axi_lite_pwm:axi_lite_pwm|current_state
+Name current_state.RD_WAIT_RSP current_state.RD_ISSUE current_state.WR_SEND_B current_state.WR_WAIT_RSP current_state.WR_ISSUE current_state.WR_WAIT_ADDR current_state.WR_WAIT_DATA current_state.IDLE current_state.RD_SEND_R 
+current_state.IDLE 0 0 0 0 0 0 0 0 0 
+current_state.WR_WAIT_DATA 0 0 0 0 0 0 1 1 0 
+current_state.WR_WAIT_ADDR 0 0 0 0 0 1 0 1 0 
+current_state.WR_ISSUE 0 0 0 0 1 0 0 1 0 
+current_state.WR_WAIT_RSP 0 0 0 1 0 0 0 1 0 
+current_state.WR_SEND_B 0 0 1 0 0 0 0 1 0 
+current_state.RD_ISSUE 0 1 0 0 0 0 0 1 0 
+current_state.RD_WAIT_RSP 1 0 0 0 0 0 0 1 0 
+current_state.RD_SEND_R 0 0 0 0 0 0 0 1 1 
