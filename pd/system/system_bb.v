@@ -1,10 +1,10 @@
 
 module system (
 	clk_clk,
-	pwm_out_conduit,
-	reset_reset_n);	
+	reset_reset_n,
+	pwm_conduit);	
 
 	input		clk_clk;
-	output		pwm_out_conduit;
 	input		reset_reset_n;
+	output		pwm_conduit;
 endmodule

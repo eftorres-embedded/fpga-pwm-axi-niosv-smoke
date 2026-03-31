@@ -4,7 +4,7 @@
  * Machine generated for CPU 'niosv_m' in SOPC Builder design 'system'
  * SOPC Builder design path: ../../pd/system.sopcinfo
  *
- * Generated: Thu Mar 26 09:04:13 CDT 2026
+ * Generated: Tue Mar 31 14:19:41 CDT 2026
  */
 
 /*
@@ -158,17 +158,17 @@
 
 
 /*
- * axi_lite_pwm configuration
+ * axi_lite_pwm_0 configuration
  *
  */
 
-#define ALT_MODULE_CLASS_axi_lite_pwm axi_lite_pwm
-#define AXI_LITE_PWM_BASE 0x30000
-#define AXI_LITE_PWM_IRQ -1
-#define AXI_LITE_PWM_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define AXI_LITE_PWM_NAME "/dev/axi_lite_pwm"
-#define AXI_LITE_PWM_SPAN 4096
-#define AXI_LITE_PWM_TYPE "axi_lite_pwm"
+#define ALT_MODULE_CLASS_axi_lite_pwm_0 axi_lite_pwm
+#define AXI_LITE_PWM_0_BASE 0x30000
+#define AXI_LITE_PWM_0_IRQ -1
+#define AXI_LITE_PWM_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define AXI_LITE_PWM_0_NAME "/dev/axi_lite_pwm_0"
+#define AXI_LITE_PWM_0_SPAN 4096
+#define AXI_LITE_PWM_0_TYPE "axi_lite_pwm"
 
 
 /*

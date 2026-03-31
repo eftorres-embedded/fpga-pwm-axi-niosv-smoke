@@ -2,12 +2,12 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal2</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 26, 2026 9:04:12 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1774533852162</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 31, 2026 2:19:40 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1774984780928</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>D:\fpga_projects\fpga_pwm_axi_niosv_smoke_test1\sw\bsp</BspGeneratedLocation>
         <BspSettingsFile>D:\fpga_projects\fpga_pwm_axi_niosv_smoke_test1\sw\bsp\settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\pd\system.sopcinfo</SopcDesignFile>
-        <SystemFileHash>88754c5965cb98a276d6222ebcc6d3dbecda9e4b182b2b318305120b0f1bd</SystemFileHash>
+        <SystemFileHash>20e8fc42fd87b844deaafe7163e6912c70d4711ffddc35428bce5d20d93e4</SystemFileHash>
         <JdiFile>default</JdiFile>
         <Cpu>niosv_m</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -612,7 +612,7 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>axi_lite_pwm</slaveDescriptor>
+                <slaveDescriptor>axi_lite_pwm_0</slaveDescriptor>
                 <addressRange>0x00030000 - 0x00030FFF</addressRange>
                 <addressSpan>4096</addressSpan>
                 <attributes/>

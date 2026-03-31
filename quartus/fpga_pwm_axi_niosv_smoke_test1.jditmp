@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="62060ac7744196ba18fb"/>
+    <hash md5_digest_80b="ec37bcfb65476a77774a"/>
   </project>
   <file_info>
     <file device="10M50DAF484C7G" path="fpga_pwm_axi_niosv_smoke_test1.sof" usercode="0xFFFFFFFF"/>
@@ -151,7 +151,7 @@
   <sld_infos>
     <sld_info hpath="system:u0" name="u0">
       <assignment_values>
-        <assignment_value text="QSYS_NAME system HAS_SOPCINFO 1 GENERATION_ID 1774980306"/>
+        <assignment_value text="QSYS_NAME system HAS_SOPCINFO 1 GENERATION_ID 1774984493"/>
       </assignment_values>
       <parameters/>
     </sld_info>

@@ -54,6 +54,8 @@ quartus/project/simulation/
 *.qpf.bak
 *.qsf.bak
 
+*.sv.bak
+
 # ---- Platform Designer ----
 
 pd/**/synthesis/

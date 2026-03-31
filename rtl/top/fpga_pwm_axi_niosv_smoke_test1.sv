@@ -77,7 +77,7 @@ module fpga_pwm_axi_niosv_smoke_test1(
 	system	u0(
 		.clk_clk(MAX10_CLK1_50),
 		.reset_reset_n(reset_n),
-		.pwm_out_conduit(pwm_out));
+		.pwm_conduit(pwm_out));
 
 
 endmodule
