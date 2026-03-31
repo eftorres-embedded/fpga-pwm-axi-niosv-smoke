@@ -77,3 +77,22 @@ build/sim/
 .vscode/
 .DS_Store
 Thumbs.db
+
+
+# Root build
+/build/
+
+# CMake
+**/CMakeFiles/
+**/CMakeCache.txt
+**/Makefile
+
+# Quartus outputs
+quartus/*.sof
+quartus/*.pof
+quartus/*.pin
+quartus/*.qws
+
+# Platform Designer
+pd/system/*.html
+pd/system/*.rpt
