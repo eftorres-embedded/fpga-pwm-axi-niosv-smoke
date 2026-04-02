@@ -11,7 +11,6 @@
 #define REG_STATUS	(*(volatile uint32_t*)(PWM_BASE + 0x10))
 #define REG_CNT		(*(volatile uint32_t*)(PWM_BASE + 0x14))
 
-//later to add gamma-corrected fade loop
 int main(void)
 {
     printf("\n\nstart\n");
